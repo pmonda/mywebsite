@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<body>
+			<header>
+			<link href="aboutstyle.css" rel = "stylesheet" type = "text/css">
+				
+				<p class = "sansserif">Hello, I am Pranesh Monda and this website was intended for fun, so go on and explore everything on this webpage!</p>
+	<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn"><img border = "0" alt = "back arrow" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/220px-Hamburger_icon.svg.png" width = "25"></button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="website.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="">Contact</a>
+	<a href="">FAQ</a>
+	<a href="">Fun</a>
+	<a href="login.html">Log In/ Sign Up</a> 
+  </div>
+</div>
+				
+				<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+			</header>
+		</body>
+	</head>
+</html>
